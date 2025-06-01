@@ -71,3 +71,52 @@ nav {
     color: yellow;
 }
 /* HEADER */
+
+/* CARROSSEL */
+.carrossel {
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+    margin-top: 9rem; 
+    height: 6rem; 
+    display: flex;
+    align-items: center;
+}
+
+.carrossel-wrapper {
+    display: flex;
+    animation: deslizar 20s infinite linear;
+    gap: 6rem;
+    align-items: center;
+    padding: 1rem 0;
+    width: max-content;
+}
+
+.carrossel-item {
+    flex: 0 0 auto;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    min-width: 15rem;
+}
+
+.carrossel-item img {
+    max-height: 3rem;
+    width: auto;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+
+@keyframes deslizar {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+/* CARROSSEL */
