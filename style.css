@@ -120,3 +120,214 @@ nav {
     }
 }
 /* CARROSSEL */
+
+/SEÇÃO MAIN/
+.main {
+    display: flex;
+    background-color: #4a1d18;
+    align-items: center;
+    height: 30rem;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo {
+    height: 20rem;
+    width: 35%;
+    background-color: #d4c8c1;
+    position: absolute;
+    left: 5rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.titulo h1{
+    color: #4a1d18;
+    margin: 0.5rem 0;
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+
+.titulo h2{
+    color:#4a1d18;
+    margin: 0.5rem 0;
+    font-size: 2.4rem;
+}
+
+.titulo h3{
+    color:#4a1d18;
+    margin: 0.5rem 0;
+    font-size: 1.6rem;
+}
+
+.titulo h3 span{
+    font-weight: 900;
+}
+
+.centro {
+    height: 30rem;
+    width: 25%;
+    background-color: #a99180;
+    margin-left: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.centro h3 {
+    color: #d4c8c1;
+    font-size: 2.4rem;
+    margin: 0 0 1rem 0;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.centro h4 {
+    color: #d4c8c1;
+    font-size: 3.2rem;
+    margin: 0 0 2rem 0;
+    font-weight: 700;
+}
+
+.btn-comprar {
+    background-color: #4a1d18;
+    color: #d4c8c1;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn-comprar:hover {
+    background-color: #d4c8c1;
+    color: #4a1d18;
+    transform: scale(1.1);
+    
+}
+
+.direita {
+    height: 30rem;
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direita img {
+    height: 30rem;
+    max-width: 100%;
+}
+
+/* Media Queries para Responsividade */
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .main {
+        height: auto;
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    
+    .titulo {
+        position: static;
+        width: 80%;
+        height: auto;
+        margin-bottom: 2rem;
+        left: auto;
+    }
+    
+    .centro {
+        width: 80%;
+        height: auto;
+        margin: 2rem 0;
+        margin-left: 0;
+        padding: 2rem;
+    }
+    
+    .direita {
+        width: 80%;
+        height: auto;
+    }
+    
+    .direita img {
+        height: auto;
+        max-height: 20rem;
+    }
+}
+
+/* Celulares (até 768px) */
+@media screen and (max-width: 768px) {
+    .titulo {
+        width: 90%;
+    }
+    
+    .titulo h1 {
+        font-size: 2.4rem;
+    }
+    
+    .titulo h2 {
+        font-size: 1.8rem;
+    }
+    
+    .titulo h3 {
+        font-size: 1.4rem;
+    }
+    
+    .centro {
+        width: 90%;
+    }
+    
+    .centro h3 {
+        font-size: 1.8rem;
+    }
+    
+    .centro h4 {
+        font-size: 2.4rem;
+    }
+    
+    .btn-comprar {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .direita {
+        width: 90%;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+    .titulo h1 {
+        font-size: 2rem;
+    }
+    
+    .titulo h2 {
+        font-size: 1.5rem;
+    }
+    
+    .titulo h3 {
+        font-size: 1.2rem;
+    }
+    
+    .centro h3 {
+        font-size: 1.5rem;
+    }
+    
+    .centro h4 {
+        font-size: 2rem;
+    }
+}
+/SEÇÃO MAIN/
