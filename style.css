@@ -231,9 +231,8 @@ nav {
     max-width: 100%;
 }
 
-/* Media Queries para Responsividade */
+/* RESPONSIVIDADE SECAO MAIN */
 
-/* Tablets (768px - 1024px) */
 @media screen and (max-width: 1024px) {
     .main {
         height: auto;
@@ -267,8 +266,6 @@ nav {
         max-height: 20rem;
     }
 }
-
-/* Celulares (até 768px) */
 @media screen and (max-width: 768px) {
     .titulo {
         width: 90%;
@@ -308,7 +305,6 @@ nav {
     }
 }
 
-/* Celulares pequenos (até 480px) */
 @media screen and (max-width: 480px) {
     .titulo h1 {
         font-size: 2rem;
